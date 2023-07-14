@@ -48,8 +48,9 @@ for order in orders:
         trade_result = sum(order["NetCash"] for order in orders_within_trade[symbol])
         trade_amount = sum(abs(order["TradeMoney"]) for order in orders_within_trade[symbol] if order["Open/CloseIndicator"] == "O")
         trade_shares_quantity = sum(abs(order["Quantity"]) for order in orders_within_trade[symbol] if order["Open/CloseIndicator"] == "O")
-        trade_result_percentage = trade_result / trade_amount * 100
+        trade_result_percentage = trade_result / trade_amount
         trade_fee = sum(order["IBCommission"] for order in orders_within_trade[symbol])
+        trade_asset = orders_within_trade[symbol][0]["AssetClass"]
         trade_enter_date = min(order["DateTime"] for order in orders_within_trade[symbol])
         trade_exit_date = max(order["DateTime"] for order in orders_within_trade[symbol])
         trade_holding_time = trade_exit_date - trade_enter_date
@@ -70,6 +71,7 @@ for order in orders:
 		
         trades.append({
             "Symbol": symbol,
+            "Asset class": trade_asset,
             "Long/Short": long_short,
             "Quantity": quantity_sum[symbol],
 			"Trade Shares/Contracts Quantity": trade_shares_quantity,
