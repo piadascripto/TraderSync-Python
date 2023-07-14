@@ -1,11 +1,14 @@
 {
   "2023-07-06": {
     "Total Result": 31.801635239999996,
+    "Total Result Percentaage": 0.3219750354609929,
+    "Total Amount": 98.7705,
     "Total Fee": -2.52286476,
     "Number of Trades": 1,
+    "Average Trade Amount": 98.7705,
+    "Win Rate": 1.0,
     "Number of Wins": 1,
     "Number of Loss": 0,
-    "Win Rate": 1.0,
     "Trades": [
       {
         "Symbol": "TTOO",
@@ -27,11 +30,14 @@
   },
   "2023-07-07": {
     "Total Result": 20.843493457999976,
+    "Total Result Percentaage": 0.06685226540519659,
+    "Total Amount": 311.7844,
     "Total Fee": -6.599806542,
     "Number of Trades": 4,
+    "Average Trade Amount": 77.9461,
+    "Win Rate": 0.75,
     "Number of Wins": 3,
     "Number of Loss": 1,
-    "Win Rate": 0.75,
     "Trades": [
       {
         "Symbol": "TTCF",
@@ -101,11 +107,14 @@
   },
   "2023-07-10": {
     "Total Result": 9.868210384000033,
+    "Total Result Percentaage": 0.032616360662890045,
+    "Total Amount": 302.554,
     "Total Fee": -6.902789616,
     "Number of Trades": 4,
+    "Average Trade Amount": 75.6385,
+    "Win Rate": 0.5,
     "Number of Wins": 2,
     "Number of Loss": 2,
-    "Win Rate": 0.5,
     "Trades": [
       {
         "Symbol": "RVYL",
@@ -175,11 +184,14 @@
   },
   "2023-07-11": {
     "Total Result": 17.967776000000015,
+    "Total Result Percentaage": 0.04458505210918117,
+    "Total Amount": 403.00000000000006,
     "Total Fee": -4.032224,
     "Number of Trades": 1,
+    "Average Trade Amount": 403.00000000000006,
+    "Win Rate": 1.0,
     "Number of Wins": 1,
     "Number of Loss": 0,
-    "Win Rate": 1.0,
     "Trades": [
       {
         "Symbol": "UGRO",

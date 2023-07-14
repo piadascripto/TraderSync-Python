@@ -109,24 +109,32 @@ for trade in trades:
     if trade_day in trades_journal:
         trades_journal[trade_day]["Total Result"] += trade["Trade Result"]
         trades_journal[trade_day]["Total Fee"] += trade["Trade Fee"]
+        trades_journal[trade_day]["Total Amount"] += trade["Trade Amount"]
         trades_journal[trade_day]["Number of Trades"] += 1
         if trade["Win/Loss"] == "WIN":
             trades_journal[trade_day]['Number of Wins'] += 1
         elif trade["Win/Loss"] == "LOSS":
             trades_journal[trade_day]['Number of Loss'] += 1
-        trades_journal[trade_day]["Win Rate"] = trades_journal[trade_day]["Number of Wins"] / trades_journal[trade_day]["Number of Trades"]
         trades_journal[trade_day]["Trades"].append(trade_data)
 		
     else:
         trades_journal[trade_day] = {
 			"Total Result": trade["Trade Result"],
+			"Total Result Percentaage": 0,
+            "Total Amount": trade["Trade Amount"],
             "Total Fee": trade["Trade Fee"],
             "Number of Trades": 1,
+            "Average Trade Amount": 0,
+            "Win Rate": 1.0 if trade["Win/Loss"] == "WIN" else 0.0,
             "Number of Wins": 1 if trade["Win/Loss"] == "WIN" else 0,
             "Number of Loss": 1 if trade["Win/Loss"] == "LOSS" else 0,
-            "Win Rate": 1.0 if trade["Win/Loss"] == "WIN" else 0.0,
             "Trades": [trade_data]
         }
+
+     # Calculating more statisctis trade amount
+    trades_journal[trade_day]["Total Result Percentaage"] = trades_journal[trade_day]["Total Result"] / trades_journal[trade_day]["Total Amount"]
+    trades_journal[trade_day]["Average Trade Amount"] = trades_journal[trade_day]["Total Amount"] / trades_journal[trade_day]["Number of Trades"]
+    trades_journal[trade_day]["Win Rate"] = trades_journal[trade_day]["Number of Wins"] / trades_journal[trade_day]["Number of Trades"]
 
 # Convert to JSON and print
 print(json.dumps(trades_journal, indent=2, default=str))
