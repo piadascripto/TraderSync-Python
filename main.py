@@ -1,6 +1,7 @@
 import csv
 import json
 import datetime
+from utils import simplify_time_difference
 
 # Read CSV data from file
 with open("orders.csv", newline="") as orders_file:
@@ -49,30 +50,18 @@ for order in orders:
         trade_amount = sum(abs(order["TradeMoney"]) for order in orders_within_trade[symbol] if order["Open/CloseIndicator"] == "O")
         trade_shares_quantity = sum(abs(order["Quantity"]) for order in orders_within_trade[symbol] if order["Open/CloseIndicator"] == "O")
         trade_result_percentage = trade_result / trade_amount
+        win_loss = "WIN" if trade_result > 0 else "LOSS"
         trade_fee = sum(order["IBCommission"] for order in orders_within_trade[symbol])
         trade_asset = orders_within_trade[symbol][0]["AssetClass"]
         trade_enter_date = min(order["DateTime"] for order in orders_within_trade[symbol])
         trade_exit_date = max(order["DateTime"] for order in orders_within_trade[symbol])
-        trade_holding_time = trade_exit_date - trade_enter_date
-
-		# Simplify the output based on holding time
-        if trade_holding_time.total_seconds() < 60:  # Less than 60 minutes
-             seconds_apart = trade_holding_time.total_seconds()
-             trade_holding_time_adjusted = str(int(seconds_apart)) + " second" + ("s" if seconds_apart != 1 else "")
-        elif trade_holding_time.total_seconds() < 3600:  # Less than 60 minutes
-             minutes_apart = trade_holding_time.total_seconds() // 60
-             trade_holding_time_adjusted = str(int(minutes_apart)) + " minute" + ("s" if minutes_apart != 1 else "")
-        elif trade_enter_date.date() == trade_exit_date.date():  # Same day
-             hours_apart = trade_holding_time.total_seconds() // 3600
-             trade_holding_time_adjusted = str(int(hours_apart)) + " hour" + ("s" if hours_apart != 1 else "")
-        else:  # Different days
-             days_apart = (trade_exit_date.date() - trade_enter_date.date()).days
-             trade_holding_time_adjusted = str(days_apart) + " day" + ("s" if days_apart != 1 else "")
 		
         trades.append({
             "Symbol": symbol,
             "Asset class": trade_asset,
             "Long/Short": long_short,
+			"Win/Loss": win_loss,
+            "Number of Orders": len(orders_within_trade[symbol]),
             "Quantity": quantity_sum[symbol],
 			"Trade Shares/Contracts Quantity": trade_shares_quantity,
             "Trade Result": trade_result,
@@ -81,15 +70,67 @@ for order in orders:
             "Trade Fee": trade_fee,
             "Enter Date": trade_enter_date,
             "Exit Date": trade_exit_date,
-			"Holding time": trade_holding_time_adjusted,
+			"Holding time": simplify_time_difference(trade_enter_date, trade_exit_date),
             "Orders": orders_within_trade[symbol],
         })
         # Reset for next group
         orders_within_trade[symbol] = []
 
 # Convert to JSON and print
-print(json.dumps(trades, indent=2, default=str))
+#print(json.dumps(trades, indent=2, default=str))
 
 # Write trades to a JSON file
 with open("trades.json", "w") as json_file:
     json.dump(trades, json_file, indent=2, default=str)
+
+
+trades_journal = {}
+
+for trade in trades:
+    trade_day = trade['Exit Date'].date().isoformat()   # Extract only the date portion
+
+    trade_data = {
+        "Symbol": trade["Symbol"],
+        "Asset class": trade["Asset class"],
+        "Long/Short": trade["Long/Short"],
+        "Win/Loss": trade["Win/Loss"],
+        "Number of Orders": trade["Number of Orders"],
+        "Quantity": trade["Quantity"],
+        "Trade Shares/Contracts Quantity": trade["Trade Shares/Contracts Quantity"],
+        "Trade Result": trade["Trade Result"],
+        "Trade Amount": trade["Trade Amount"],
+        "Trade Result Percentage": trade["Trade Result Percentage"],
+        "Trade Fee": trade["Trade Fee"],
+        "Enter Date": trade["Enter Date"],
+        "Exit Date": trade["Exit Date"],
+        "Holding time": trade["Holding time"]
+    }
+
+    if trade_day in trades_journal:
+        trades_journal[trade_day]["Total Result"] += trade["Trade Result"]
+        trades_journal[trade_day]["Total Fee"] += trade["Trade Fee"]
+        trades_journal[trade_day]["Number of Trades"] += 1
+        if trade["Win/Loss"] == "WIN":
+            trades_journal[trade_day]['Number of Wins'] += 1
+        elif trade["Win/Loss"] == "LOSS":
+            trades_journal[trade_day]['Number of Loss'] += 1
+        trades_journal[trade_day]["Win Rate"] = trades_journal[trade_day]["Number of Wins"] / trades_journal[trade_day]["Number of Trades"]
+        trades_journal[trade_day]["Trades"].append(trade_data)
+		
+    else:
+        trades_journal[trade_day] = {
+			"Total Result": trade["Trade Result"],
+            "Total Fee": trade["Trade Fee"],
+            "Number of Trades": 1,
+            "Number of Wins": 1 if trade["Win/Loss"] == "WIN" else 0,
+            "Number of Loss": 1 if trade["Win/Loss"] == "LOSS" else 0,
+            "Win Rate": 1.0 if trade["Win/Loss"] == "WIN" else 0.0,
+            "Trades": [trade_data]
+        }
+
+# Convert to JSON and print
+print(json.dumps(trades_journal, indent=2, default=str))
+
+# Write trades_journal to a JSON file
+with open("trades_journal.json", "w") as json_file:
+    json.dump(trades_journal, json_file, indent=2, default=str)

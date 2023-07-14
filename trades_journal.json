@@ -1,0 +1,202 @@
+{
+  "2023-07-06": {
+    "Total Result": 31.801635239999996,
+    "Total Fee": -2.52286476,
+    "Number of Trades": 1,
+    "Number of Wins": 1,
+    "Number of Loss": 0,
+    "Win Rate": 1.0,
+    "Trades": [
+      {
+        "Symbol": "TTOO",
+        "Asset class": "STK",
+        "Long/Short": "LONG",
+        "Win/Loss": "WIN",
+        "Number of Orders": 3,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 1401,
+        "Trade Result": 31.801635239999996,
+        "Trade Amount": 98.7705,
+        "Trade Result Percentage": 0.3219750354609929,
+        "Trade Fee": -2.52286476,
+        "Enter Date": "2023-07-05 04:47:18",
+        "Exit Date": "2023-07-06 10:03:25",
+        "Holding time": "1 day"
+      }
+    ]
+  },
+  "2023-07-07": {
+    "Total Result": 20.843493457999976,
+    "Total Fee": -6.599806542,
+    "Number of Trades": 4,
+    "Number of Wins": 3,
+    "Number of Loss": 1,
+    "Win Rate": 0.75,
+    "Trades": [
+      {
+        "Symbol": "TTCF",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 200,
+        "Trade Result": 8.900099519999998,
+        "Trade Amount": 62.56,
+        "Trade Result Percentage": 0.14226501790281326,
+        "Trade Fee": -1.1799004800000001,
+        "Enter Date": "2023-07-06 16:12:38",
+        "Exit Date": "2023-07-07 04:06:28",
+        "Holding time": "1 day"
+      },
+      {
+        "Symbol": "SALM",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "LOSS",
+        "Number of Orders": 2,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 50,
+        "Trade Result": -8.998446640000004,
+        "Trade Amount": 49.58,
+        "Trade Result Percentage": -0.18149347801532886,
+        "Trade Fee": -1.07844664,
+        "Enter Date": "2023-07-06 16:42:20",
+        "Exit Date": "2023-07-07 04:14:02",
+        "Holding time": "1 day"
+      },
+      {
+        "Symbol": "AGLE",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 3,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 190,
+        "Trade Result": 7.471636343999997,
+        "Trade Amount": 101.707,
+        "Trade Result Percentage": 0.07346236093877508,
+        "Trade Fee": -2.028363656,
+        "Enter Date": "2023-07-06 15:44:20",
+        "Exit Date": "2023-07-07 05:09:07",
+        "Holding time": "1 day"
+      },
+      {
+        "Symbol": "BIOL",
+        "Asset class": "STK",
+        "Long/Short": "LONG",
+        "Win/Loss": "WIN",
+        "Number of Orders": 5,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 1349,
+        "Trade Result": 13.470204233999986,
+        "Trade Amount": 97.9374,
+        "Trade Result Percentage": 0.13753892010610846,
+        "Trade Fee": -2.313095766,
+        "Enter Date": "2023-07-05 06:05:18",
+        "Exit Date": "2023-07-07 12:14:36",
+        "Holding time": "2 days"
+      }
+    ]
+  },
+  "2023-07-10": {
+    "Total Result": 9.868210384000033,
+    "Total Fee": -6.902789616,
+    "Number of Trades": 4,
+    "Number of Wins": 2,
+    "Number of Loss": 2,
+    "Win Rate": 0.5,
+    "Trades": [
+      {
+        "Symbol": "RVYL",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "LOSS",
+        "Number of Orders": 3,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 40,
+        "Trade Result": -1.7121919999999946,
+        "Trade Amount": 49.0,
+        "Trade Result Percentage": -0.03494269387755091,
+        "Trade Fee": -1.112192,
+        "Enter Date": "2023-07-10 04:00:09",
+        "Exit Date": "2023-07-10 04:00:42",
+        "Holding time": "33 seconds"
+      },
+      {
+        "Symbol": "YELL",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 100,
+        "Trade Result": 3.7088080000000048,
+        "Trade Amount": 86.5,
+        "Trade Result Percentage": 0.04287639306358387,
+        "Trade Fee": -1.691192,
+        "Enter Date": "2023-07-07 15:11:51",
+        "Exit Date": "2023-07-10 09:31:38",
+        "Holding time": "3 days"
+      },
+      {
+        "Symbol": "SISI",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "LOSS",
+        "Number of Orders": 5,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 130,
+        "Trade Result": -5.451745935999991,
+        "Trade Amount": 66.99199999999999,
+        "Trade Result Percentage": -0.08137905923095283,
+        "Trade Fee": -1.399745936,
+        "Enter Date": "2023-07-10 09:35:05",
+        "Exit Date": "2023-07-10 10:36:49",
+        "Holding time": "1 hour"
+      },
+      {
+        "Symbol": "TIVC",
+        "Asset class": "STK",
+        "Long/Short": "LONG",
+        "Win/Loss": "WIN",
+        "Number of Orders": 6,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 1635,
+        "Trade Result": 13.323340320000014,
+        "Trade Amount": 100.06200000000001,
+        "Trade Result Percentage": 0.13315084967320273,
+        "Trade Fee": -2.69965968,
+        "Enter Date": "2023-07-10 09:00:00",
+        "Exit Date": "2023-07-10 13:03:37",
+        "Holding time": "4 hours"
+      }
+    ]
+  },
+  "2023-07-11": {
+    "Total Result": 17.967776000000015,
+    "Total Fee": -4.032224,
+    "Number of Trades": 1,
+    "Number of Wins": 1,
+    "Number of Loss": 0,
+    "Win Rate": 1.0,
+    "Trades": [
+      {
+        "Symbol": "UGRO",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 8,
+        "Quantity": 0,
+        "Trade Shares/Contracts Quantity": 200,
+        "Trade Result": 17.967776000000015,
+        "Trade Amount": 403.00000000000006,
+        "Trade Result Percentage": 0.04458505210918117,
+        "Trade Fee": -4.032224,
+        "Enter Date": "2023-07-07 11:51:02",
+        "Exit Date": "2023-07-11 09:39:04",
+        "Holding time": "4 days"
+      }
+    ]
+  }
+}
