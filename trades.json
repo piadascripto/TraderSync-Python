@@ -1,10 +1,14 @@
 [
   {
     "Symbol": "YELL",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": 3.7088080000000048,
-    "Earliest Trade Date": "2020-07-07 15:11:51",
-    "Latest Trade Date": "2020-07-10 09:31:38",
+    "Trade Amount": 86.5,
+    "Trade Result Percentage": 4.287639306358387,
+    "Trade Fee": -1.691192,
+    "Enter Date": "2020-07-07 15:11:51",
+    "Exit Date": "2020-07-10 09:31:38",
     "Orders": [
       {
         "Symbol": "YELL",
@@ -50,10 +54,14 @@
   },
   {
     "Symbol": "TTOO",
+    "Long/Short": "LONG",
     "Quantity": 0,
     "Trade Result": 31.801635199999993,
-    "Earliest Trade Date": "2023-07-05 04:47:18",
-    "Latest Trade Date": "2023-07-06 10:03:25",
+    "Trade Amount": 98.7705,
+    "Trade Result Percentage": 32.19750350560136,
+    "Trade Fee": -2.52286476,
+    "Enter Date": "2023-07-05 04:47:18",
+    "Exit Date": "2023-07-06 10:03:25",
     "Orders": [
       {
         "Symbol": "TTOO",
@@ -119,10 +127,14 @@
   },
   {
     "Symbol": "TTCF",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": 8.900099519999998,
-    "Earliest Trade Date": "2023-07-06 16:12:38",
-    "Latest Trade Date": "2023-07-07 04:06:28",
+    "Trade Amount": 62.56,
+    "Trade Result Percentage": 14.226501790281326,
+    "Trade Fee": -1.1799004800000001,
+    "Enter Date": "2023-07-06 16:12:38",
+    "Exit Date": "2023-07-07 04:06:28",
     "Orders": [
       {
         "Symbol": "TTCF",
@@ -168,10 +180,14 @@
   },
   {
     "Symbol": "SALM",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": -8.998446640000004,
-    "Earliest Trade Date": "2023-07-06 16:42:20",
-    "Latest Trade Date": "2023-07-07 04:14:02",
+    "Trade Amount": 49.58,
+    "Trade Result Percentage": -18.149347801532887,
+    "Trade Fee": -1.07844664,
+    "Enter Date": "2023-07-06 16:42:20",
+    "Exit Date": "2023-07-07 04:14:02",
     "Orders": [
       {
         "Symbol": "SALM",
@@ -217,10 +233,14 @@
   },
   {
     "Symbol": "AGLE",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": 7.471636299999993,
-    "Earliest Trade Date": "2023-07-06 15:44:20",
-    "Latest Trade Date": "2023-07-07 05:09:07",
+    "Trade Amount": 101.707,
+    "Trade Result Percentage": 7.346236050615978,
+    "Trade Fee": -2.028363656,
+    "Enter Date": "2023-07-06 15:44:20",
+    "Exit Date": "2023-07-07 05:09:07",
     "Orders": [
       {
         "Symbol": "AGLE",
@@ -286,10 +306,14 @@
   },
   {
     "Symbol": "BIOL",
+    "Long/Short": "LONG",
     "Quantity": 0,
     "Trade Result": 13.470204231999993,
-    "Earliest Trade Date": "2023-07-05 06:05:18",
-    "Latest Trade Date": "2023-07-07 12:14:36",
+    "Trade Amount": 97.9374,
+    "Trade Result Percentage": 13.753892008568732,
+    "Trade Fee": -2.313095766,
+    "Enter Date": "2023-07-05 06:05:18",
+    "Exit Date": "2023-07-07 12:14:36",
     "Orders": [
       {
         "Symbol": "BIOL",
@@ -395,10 +419,14 @@
   },
   {
     "Symbol": "RVYL",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": -1.7121919999999946,
-    "Earliest Trade Date": "2023-07-10 04:00:09",
-    "Latest Trade Date": "2023-07-10 04:00:42",
+    "Trade Amount": 49.0,
+    "Trade Result Percentage": -3.494269387755091,
+    "Trade Fee": -1.112192,
+    "Enter Date": "2023-07-10 04:00:09",
+    "Exit Date": "2023-07-10 04:00:42",
     "Orders": [
       {
         "Symbol": "RVYL",
@@ -464,10 +492,14 @@
   },
   {
     "Symbol": "YELL",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": 3.7088080000000048,
-    "Earliest Trade Date": "2023-07-07 15:11:51",
-    "Latest Trade Date": "2023-07-10 09:31:38",
+    "Trade Amount": 86.5,
+    "Trade Result Percentage": 4.287639306358387,
+    "Trade Fee": -1.691192,
+    "Enter Date": "2023-07-07 15:11:51",
+    "Exit Date": "2023-07-10 09:31:38",
     "Orders": [
       {
         "Symbol": "YELL",
@@ -513,10 +545,14 @@
   },
   {
     "Symbol": "SISI",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": -5.451745940000006,
-    "Earliest Trade Date": "2023-07-10 09:35:05",
-    "Latest Trade Date": "2023-07-10 10:36:49",
+    "Trade Amount": 66.99199999999999,
+    "Trade Result Percentage": -8.137905929066166,
+    "Trade Fee": -1.399745936,
+    "Enter Date": "2023-07-10 09:35:05",
+    "Exit Date": "2023-07-10 10:36:49",
     "Orders": [
       {
         "Symbol": "SISI",
@@ -622,10 +658,14 @@
   },
   {
     "Symbol": "TIVC",
+    "Long/Short": "LONG",
     "Quantity": 0,
     "Trade Result": 13.323340300000012,
-    "Earliest Trade Date": "2023-07-10 09:00:00",
-    "Latest Trade Date": "2023-07-10 13:03:37",
+    "Trade Amount": 100.06200000000001,
+    "Trade Result Percentage": 13.315084947332664,
+    "Trade Fee": -2.69965968,
+    "Enter Date": "2023-07-10 09:00:00",
+    "Exit Date": "2023-07-10 13:03:37",
     "Orders": [
       {
         "Symbol": "TIVC",
@@ -751,10 +791,14 @@
   },
   {
     "Symbol": "YELL",
+    "Long/Short": "SHORT",
     "Quantity": 0,
     "Trade Result": 3.7088080000000048,
-    "Earliest Trade Date": "2025-07-07 15:11:51",
-    "Latest Trade Date": "2025-07-10 09:31:38",
+    "Trade Amount": 86.5,
+    "Trade Result Percentage": 4.287639306358387,
+    "Trade Fee": -1.691192,
+    "Enter Date": "2025-07-07 15:11:51",
+    "Exit Date": "2025-07-10 09:31:38",
     "Orders": [
       {
         "Symbol": "YELL",
