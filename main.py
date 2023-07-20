@@ -12,9 +12,11 @@ with open("orders.csv", newline="") as orders_file:
 for order in orders:
     date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
     timezone = order["DateTime"].split(" ")[1]
-    order["DateTime"] = date_time
+
     order["TimeZone"] = timezone
-    order["Quantity"] = int(order["Quantity"])  # Ensure quantity is integer
+    date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
+    order["DateTime"] = date_time
+    order["Quantity"] = float(order["Quantity"])  # Ensure quantity is integer
     order["TradePrice"] = float(order["TradePrice"])  # Ensure TradePrice is float
     order["TradeMoney"] = float(order["TradeMoney"])  # Ensure TradeMoney is float
     order["IBCommission"] = float(order["IBCommission"])  # Ensure IBCommission is float
@@ -111,6 +113,16 @@ for trade in trades:
         trades_journal[trade_day]["Total Fee"] += trade["Trade Fee"]
         trades_journal[trade_day]["Total Amount"] += trade["Trade Amount"]
         trades_journal[trade_day]["Number of Trades"] += 1
+        trades_journal[trade_day]["Total Losses"] += trade["Trade Fee"]
+#adjusar isso...algo ta errado
+#adjusar isso...algo ta errado
+#adjusar isso...algo ta errado
+#adjusar isso...algo ta errado
+#adjusar isso...algo ta errado
+        if trade["Trade Result"] > 0:
+            trades_journal[trade_day]["Total Gains"] += trade["Trade Result"]
+        elif trade["Trade Result"] < 0:
+            trades_journal[trade_day]["Total Losses"] += trade["Trade Result"]
         if trade["Win/Loss"] == "WIN":
             trades_journal[trade_day]['Number of Wins'] += 1
         elif trade["Win/Loss"] == "LOSS":
@@ -122,6 +134,9 @@ for trade in trades:
 			"Total Result": trade["Trade Result"],
 			"Total Result Percentaage": 0,
             "Total Amount": trade["Trade Amount"],
+			"Profit factor": 0,
+			"Total Gains" : trade["Trade Result"] if trade["Trade Result"] > 0 else 0.0,
+            "Total Losses" : trade["Trade Fee"] + (trade["Trade Result"] if trade["Trade Result"] < 0 else 0.0),
             "Total Fee": trade["Trade Fee"],
             "Number of Trades": 1,
             "Average Trade Amount": 0,
@@ -131,14 +146,52 @@ for trade in trades:
             "Trades": [trade_data]
         }
 
-     # Calculating more statisctis trade amount
+     # Calculating more statisctis 
     trades_journal[trade_day]["Total Result Percentaage"] = trades_journal[trade_day]["Total Result"] / trades_journal[trade_day]["Total Amount"]
     trades_journal[trade_day]["Average Trade Amount"] = trades_journal[trade_day]["Total Amount"] / trades_journal[trade_day]["Number of Trades"]
     trades_journal[trade_day]["Win Rate"] = trades_journal[trade_day]["Number of Wins"] / trades_journal[trade_day]["Number of Trades"]
+    trades_journal[trade_day]["Profit factor"] = trades_journal[trade_day]["Total Gains"] / abs(trades_journal[trade_day]["Total Losses"])
 
+
+#key aggregated statics
+
+all_result = 0
+all_gains = 0
+all_losses = 0
+all_profit_factor = 0
+all_win_rate = 0
+all_win = 0
+all_loss = 0
+all_fee = 0
+
+for day in trades_journal:
+    all_result += trades_journal[day]["Total Result"]
+    all_gains += trades_journal[day]["Total Gains"]
+    all_losses += abs(trades_journal[day]["Total Losses"])
+    all_profit_factor = all_gains / all_losses
+    all_win += trades_journal[day]["Number of Wins"]
+    all_loss += trades_journal[day]['Number of Loss']
+    all_win_rate = all_win / (all_loss + all_win)
+    all_fee += trades_journal[day]["Total Fee"]
+
+trades_statistics = {
+    "Result": all_result, 
+	"Gains $": all_gains,
+    "Losses $": all_losses,
+	"Profit Factor": all_profit_factor,
+	"Win Rate": all_win_rate,
+	"# Wins": all_win,
+	"# Loss": all_loss,
+	"Fees": all_fee,
+	
+}
+
+print(json.dumps(trades_statistics, indent=2, default=str))
 # Convert to JSON and print
 print(json.dumps(trades_journal, indent=2, default=str))
 
 # Write trades_journal to a JSON file
 with open("trades_journal.json", "w") as json_file:
     json.dump(trades_journal, json_file, indent=2, default=str)
+
+#adjust netcash -> total result. 
