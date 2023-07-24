@@ -10,12 +10,14 @@ with open("orders.csv", newline="") as orders_file:
 
 # Separate timezone from DateTime and add to another column
 for order in orders:
-    date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
-    timezone = order["DateTime"].split(" ")[1]
+    #date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
+    #timezone = order["DateTime"].split(" ")[1]
 
-    order["TimeZone"] = timezone
+    #order["TimeZone"] = timezone
     date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
     order["DateTime"] = date_time
+
+	
     order["Quantity"] = float(order["Quantity"])  # Ensure quantity is integer
     order["TradePrice"] = float(order["TradePrice"])  # Ensure TradePrice is float
     order["TradeMoney"] = float(order["TradeMoney"])  # Ensure TradeMoney is float
