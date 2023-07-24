@@ -17,7 +17,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "TTOO",
@@ -42,7 +42,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "TTOO",
@@ -67,7 +67,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "TTOO",
@@ -110,7 +110,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "TTCF",
@@ -135,7 +135,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "TTCF",
@@ -178,7 +178,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SALM",
@@ -203,7 +203,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SALM",
@@ -246,7 +246,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "AGLE",
@@ -271,7 +271,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "AGLE",
@@ -296,7 +296,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "AGLE",
@@ -339,7 +339,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "BIOL",
@@ -364,7 +364,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "BIOL",
@@ -389,7 +389,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "BIOL",
@@ -414,7 +414,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "BIOL",
@@ -439,7 +439,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "BIOL",
@@ -482,7 +482,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "RVYL",
@@ -507,7 +507,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "RVYL",
@@ -532,7 +532,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "RVYL",
@@ -575,7 +575,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "YELL",
@@ -600,7 +600,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "YELL",
@@ -643,7 +643,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SISI",
@@ -668,7 +668,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SISI",
@@ -693,7 +693,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SISI",
@@ -718,7 +718,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SISI",
@@ -743,7 +743,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SISI",
@@ -786,7 +786,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -811,7 +811,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -836,7 +836,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -861,7 +861,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -886,7 +886,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -911,7 +911,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -936,7 +936,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -961,7 +961,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "UGRO",
@@ -1004,7 +1004,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "IGC",
@@ -1029,7 +1029,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "IGC",
@@ -1054,7 +1054,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "IGC",
@@ -1097,7 +1097,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "AKBA",
@@ -1122,7 +1122,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "AKBA",
@@ -1147,7 +1147,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "AKBA",
@@ -1190,7 +1190,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "KIQ",
@@ -1215,7 +1215,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "KIQ",
@@ -1258,7 +1258,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "RBT",
@@ -1283,7 +1283,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "RBT",
@@ -1326,7 +1326,7 @@
     "Orders": [
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SYBX",
@@ -1351,7 +1351,7 @@
       },
       {
         "ClientAccountID": "U11955939",
-        "AccountAlias": "Segunda-feira",
+        "AccountAlias": "Terca-feira",
         "CurrencyPrimary": "USD",
         "AssetClass": "STK",
         "Symbol": "SYBX",

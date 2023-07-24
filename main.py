@@ -113,12 +113,6 @@ for trade in trades:
         trades_journal[trade_day]["Total Fee"] += trade["Trade Fee"]
         trades_journal[trade_day]["Total Amount"] += trade["Trade Amount"]
         trades_journal[trade_day]["Number of Trades"] += 1
-        trades_journal[trade_day]["Total Losses"] += trade["Trade Fee"]
-#adjusar isso...algo ta errado
-#adjusar isso...algo ta errado
-#adjusar isso...algo ta errado
-#adjusar isso...algo ta errado
-#adjusar isso...algo ta errado
         if trade["Trade Result"] > 0:
             trades_journal[trade_day]["Total Gains"] += trade["Trade Result"]
         elif trade["Trade Result"] < 0:
@@ -136,10 +130,11 @@ for trade in trades:
             "Total Amount": trade["Trade Amount"],
 			"Profit factor": 0,
 			"Total Gains" : trade["Trade Result"] if trade["Trade Result"] > 0 else 0.0,
-            "Total Losses" : trade["Trade Fee"] + (trade["Trade Result"] if trade["Trade Result"] < 0 else 0.0),
+            "Total Losses" : (trade["Trade Result"] if trade["Trade Result"] < 0 else 0.0),
             "Total Fee": trade["Trade Fee"],
             "Number of Trades": 1,
             "Average Trade Amount": 0,
+
             "Win Rate": 1.0 if trade["Win/Loss"] == "WIN" else 0.0,
             "Number of Wins": 1 if trade["Win/Loss"] == "WIN" else 0,
             "Number of Loss": 1 if trade["Win/Loss"] == "LOSS" else 0,
@@ -150,7 +145,7 @@ for trade in trades:
     trades_journal[trade_day]["Total Result Percentaage"] = trades_journal[trade_day]["Total Result"] / trades_journal[trade_day]["Total Amount"]
     trades_journal[trade_day]["Average Trade Amount"] = trades_journal[trade_day]["Total Amount"] / trades_journal[trade_day]["Number of Trades"]
     trades_journal[trade_day]["Win Rate"] = trades_journal[trade_day]["Number of Wins"] / trades_journal[trade_day]["Number of Trades"]
-    trades_journal[trade_day]["Profit factor"] = trades_journal[trade_day]["Total Gains"] / abs(trades_journal[trade_day]["Total Losses"])
+
 
 
 #key aggregated statics
@@ -163,35 +158,40 @@ all_win_rate = 0
 all_win = 0
 all_loss = 0
 all_fee = 0
+all_amount = 0
 
 for day in trades_journal:
     all_result += trades_journal[day]["Total Result"]
     all_gains += trades_journal[day]["Total Gains"]
     all_losses += abs(trades_journal[day]["Total Losses"])
-    all_profit_factor = all_gains / all_losses
+    all_amount += trades_journal[day]["Total Amount"]
+    all_profit_factor = (all_gains / all_losses) if all_losses != 0 else None
     all_win += trades_journal[day]["Number of Wins"]
     all_loss += trades_journal[day]['Number of Loss']
     all_win_rate = all_win / (all_loss + all_win)
     all_fee += trades_journal[day]["Total Fee"]
 
 trades_statistics = {
-    "Result": all_result, 
-	"Gains $": all_gains,
-    "Losses $": all_losses,
+    "Net Result": all_result, 
+	"Net Gains $": all_gains,
+    "Net Losses $": all_losses,
+    "Return %": all_result / all_amount,
+	"Averange Amount": all_amount / (all_win + all_loss),
 	"Profit Factor": all_profit_factor,
-	"Win Rate": all_win_rate,
+	"Win Rate %": all_win_rate,
 	"# Wins": all_win,
 	"# Loss": all_loss,
 	"Fees": all_fee,
 	
 }
-
-print(json.dumps(trades_statistics, indent=2, default=str))
 # Convert to JSON and print
-print(json.dumps(trades_journal, indent=2, default=str))
+print(json.dumps(trades_statistics, indent=2, default=str))
+
+# Write trades_journal to a JSON file
+with open("trades_statistics.json", "w") as json_file:
+    json.dump(trades_statistics, json_file, indent=2, default=str)
 
 # Write trades_journal to a JSON file
 with open("trades_journal.json", "w") as json_file:
     json.dump(trades_journal, json_file, indent=2, default=str)
 
-#adjust netcash -> total result. 
