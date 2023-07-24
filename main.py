@@ -1,7 +1,21 @@
+#remove the multiple hears of CSV 
+#remove the multiple hears of CSV 
+#remove the multiple hears of CSV 
+#remove the multiple hears of CSV 
+#remove the multiple hears of CSV 
+#remove the multiple hears of CSV 
+
 import csv
 import json
 import datetime
+import interactive_brokers
 from utils import simplify_time_difference
+
+
+IBKR_user_token = "135962967293328323184330"
+IBKR_user_query = "830297"
+interactive_brokers.fetch_IBKR_data_and_write_to_csv(IBKR_user_token, IBKR_user_query)
+
 
 # Read CSV data from file
 with open("orders.csv", newline="") as orders_file:
