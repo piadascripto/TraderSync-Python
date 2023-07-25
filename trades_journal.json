@@ -574,5 +574,69 @@
         "Holding time": "2 hours"
       }
     ]
+  },
+  "2023-07-24": {
+    "Total Result": 31.194260200000002,
+    "Total Result Percentaage": 0.09606362368157671,
+    "Total Amount": 324.725,
+    "Profit factor": 0,
+    "Total Gains": 31.194260200000002,
+    "Total Losses": 0.0,
+    "Total Fee": -5.8720398,
+    "Number of Trades": 3,
+    "Average Trade Amount": 108.24166666666667,
+    "Win Rate": 1.0,
+    "Number of Wins": 3,
+    "Number of Loss": 0,
+    "Trades": [
+      {
+        "Symbol": "STKH",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 97.0,
+        "Trade Result": 7.0486176799999924,
+        "Trade Amount": 103.79,
+        "Trade Result Percentage": 0.06791230060699481,
+        "Trade Fee": -1.9626823199999999,
+        "Enter Date": "2023-07-24 10:06:16",
+        "Exit Date": "2023-07-24 10:16:01",
+        "Holding time": "9 minutes"
+      },
+      {
+        "Symbol": "ARMP",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 70.0,
+        "Trade Result": 13.563896600000007,
+        "Trade Amount": 119.175,
+        "Trade Result Percentage": 0.11381494944409488,
+        "Trade Fee": -2.0111034,
+        "Enter Date": "2023-07-24 10:39:13",
+        "Exit Date": "2023-07-24 10:42:15",
+        "Holding time": "3 minutes"
+      },
+      {
+        "Symbol": "DFLI",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 32.0,
+        "Trade Result": 10.581745920000003,
+        "Trade Amount": 101.76,
+        "Trade Result Percentage": 0.10398728301886795,
+        "Trade Fee": -1.89825408,
+        "Enter Date": "2023-07-24 10:38:19",
+        "Exit Date": "2023-07-24 10:59:24",
+        "Holding time": "21 minutes"
+      }
+    ]
   }
 }

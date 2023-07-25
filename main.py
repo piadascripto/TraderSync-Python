@@ -17,11 +17,10 @@ with open("orders.csv", newline="") as orders_file:
 
 # Separate timezone from DateTime and add to another column
 for order in orders:
-    #date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
-    #timezone = order["DateTime"].split(" ")[1]
-
-    #order["TimeZone"] = timezone
     date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
+    timezone = order["DateTime"].split(" ")[1]
+    order["TimeZone"] = timezone
+    #date_time = datetime.datetime.strptime(order["DateTime"].split(" ")[0], "%Y-%m-%d;%H:%M:%S")
     order["DateTime"] = date_time
 
 	
@@ -185,7 +184,7 @@ trades_statistics = {
 	"Net Gains $": all_gains,
     "Net Losses $": all_losses,
     "Return %": all_result / all_amount,
-	"Averange Amount": all_amount / (all_win + all_loss),
+	"Average Amount": all_amount / (all_win + all_loss),
 	"Profit Factor": all_profit_factor,
 	"Win Rate %": all_win_rate,
 	"# Wins": all_win,

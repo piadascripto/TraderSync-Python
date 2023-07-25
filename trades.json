@@ -37,7 +37,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24349308935",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -61,7 +62,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24349409310",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -85,7 +87,8 @@
         "FifoPnlRealized": "31.801635",
         "Buy/Sell": "SELL",
         "TransactionID": "24364471205",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -127,7 +130,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24371022445",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -151,7 +155,8 @@
         "FifoPnlRealized": "8.9001",
         "Buy/Sell": "BUY",
         "TransactionID": "24375690200",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -193,7 +198,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24371061244",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -217,7 +223,8 @@
         "FifoPnlRealized": "-8.998447",
         "Buy/Sell": "BUY",
         "TransactionID": "24375702338",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -259,7 +266,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24370579595",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -283,7 +291,8 @@
         "FifoPnlRealized": "3.445079",
         "Buy/Sell": "BUY",
         "TransactionID": "24375766372",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -307,7 +316,8 @@
         "FifoPnlRealized": "4.026557",
         "Buy/Sell": "BUY",
         "TransactionID": "24375766376",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -349,7 +359,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24349435080",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -373,7 +384,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24349524524",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -397,7 +409,8 @@
         "FifoPnlRealized": "3.784438",
         "Buy/Sell": "SELL",
         "TransactionID": "24379941218",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -421,7 +434,8 @@
         "FifoPnlRealized": "0.788841",
         "Buy/Sell": "SELL",
         "TransactionID": "24379941244",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -445,7 +459,8 @@
         "FifoPnlRealized": "8.896925",
         "Buy/Sell": "SELL",
         "TransactionID": "24380031904",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -487,7 +502,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24388921854",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -511,7 +527,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24388921856",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -535,7 +552,8 @@
         "FifoPnlRealized": "-1.712192",
         "Buy/Sell": "BUY",
         "TransactionID": "24388927380",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -577,7 +595,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24382946107",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -601,7 +620,8 @@
         "FifoPnlRealized": "3.708808",
         "Buy/Sell": "BUY",
         "TransactionID": "24389899749",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -643,7 +663,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24389936882",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -667,7 +688,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24389937522",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -691,7 +713,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24390329987",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -715,7 +738,8 @@
         "FifoPnlRealized": "-14.075656",
         "Buy/Sell": "BUY",
         "TransactionID": "24390333504",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -739,7 +763,8 @@
         "FifoPnlRealized": "8.62391",
         "Buy/Sell": "BUY",
         "TransactionID": "24392051449",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -781,7 +806,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24389484869",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -805,7 +831,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24389484870",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -829,7 +856,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24389484871",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -853,7 +881,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24389484872",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -877,7 +906,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24389484873",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -901,7 +931,8 @@
         "FifoPnlRealized": "13.323339",
         "Buy/Sell": "SELL",
         "TransactionID": "24394679334",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -943,7 +974,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24379592797",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -967,7 +999,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24388921972",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -991,7 +1024,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24388921974",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1015,7 +1049,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24388921978",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1039,7 +1074,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24388927552",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1063,7 +1099,8 @@
         "FifoPnlRealized": "-16.53547",
         "Buy/Sell": "BUY",
         "TransactionID": "24389281064",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1087,7 +1124,8 @@
         "FifoPnlRealized": "-0.480478",
         "Buy/Sell": "BUY",
         "TransactionID": "24389284785",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1111,7 +1149,8 @@
         "FifoPnlRealized": "34.983724",
         "Buy/Sell": "BUY",
         "TransactionID": "24403333696",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1153,7 +1192,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "BUY",
         "TransactionID": "24402128633",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1177,7 +1217,8 @@
         "FifoPnlRealized": "-3.709217",
         "Buy/Sell": "SELL",
         "TransactionID": "24430477191",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1201,7 +1242,8 @@
         "FifoPnlRealized": "-3.046333",
         "Buy/Sell": "SELL",
         "TransactionID": "24430477196",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1225,7 +1267,8 @@
         "FifoPnlRealized": "-0.755464",
         "Buy/Sell": "SELL",
         "TransactionID": "24430477202",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1267,7 +1310,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24381366515",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1291,7 +1335,8 @@
         "FifoPnlRealized": "0.165109",
         "Buy/Sell": "BUY",
         "TransactionID": "24428904883",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1315,7 +1360,8 @@
         "FifoPnlRealized": "9.987714",
         "Buy/Sell": "BUY",
         "TransactionID": "24442435860",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1357,7 +1403,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24381208503",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1381,7 +1428,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24381208806",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1405,7 +1453,8 @@
         "FifoPnlRealized": "-19.655033",
         "Buy/Sell": "BUY",
         "TransactionID": "24463366177",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1447,7 +1496,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24460719733",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1471,7 +1521,8 @@
         "FifoPnlRealized": "8.7048",
         "Buy/Sell": "BUY",
         "TransactionID": "24471127113",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1513,7 +1564,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24470256494",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1537,7 +1589,8 @@
         "FifoPnlRealized": "4.03383",
         "Buy/Sell": "BUY",
         "TransactionID": "24471333308",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1579,7 +1632,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24382911254",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U11955939",
@@ -1603,7 +1657,8 @@
         "FifoPnlRealized": "-0.333986",
         "Buy/Sell": "BUY",
         "TransactionID": "24473143347",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1645,7 +1700,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24475241422",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1669,7 +1725,8 @@
         "FifoPnlRealized": "-91.816812",
         "Buy/Sell": "BUY",
         "TransactionID": "24477229387",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1711,7 +1768,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24479589957",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1735,7 +1793,8 @@
         "FifoPnlRealized": "9.05232",
         "Buy/Sell": "BUY",
         "TransactionID": "24479590420",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1759,7 +1818,8 @@
         "FifoPnlRealized": "0.452616",
         "Buy/Sell": "BUY",
         "TransactionID": "24479590440",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1801,7 +1861,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24493111458",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1825,7 +1886,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24493139422",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1849,7 +1911,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24493139423",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1873,7 +1936,8 @@
         "FifoPnlRealized": "-4.612971",
         "Buy/Sell": "BUY",
         "TransactionID": "24493149508",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12158753",
@@ -1897,7 +1961,8 @@
         "FifoPnlRealized": "9.218928",
         "Buy/Sell": "BUY",
         "TransactionID": "24493162243",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -1939,7 +2004,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24493282203",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -1963,7 +2029,8 @@
         "FifoPnlRealized": "4.984308",
         "Buy/Sell": "BUY",
         "TransactionID": "24493823230",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -2005,7 +2072,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24497921964",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -2029,7 +2097,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24497921965",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -2053,7 +2122,8 @@
         "FifoPnlRealized": "4.839469",
         "Buy/Sell": "BUY",
         "TransactionID": "24497941264",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -2077,7 +2147,8 @@
         "FifoPnlRealized": "3.266116",
         "Buy/Sell": "BUY",
         "TransactionID": "24497941265",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -2119,7 +2190,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24506963672",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -2143,7 +2215,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24506985493",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -2167,7 +2240,8 @@
         "FifoPnlRealized": "-7.017452",
         "Buy/Sell": "BUY",
         "TransactionID": "24507012713",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12240907",
@@ -2191,7 +2265,8 @@
         "FifoPnlRealized": "14.982428",
         "Buy/Sell": "BUY",
         "TransactionID": "24507036316",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -2233,7 +2308,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24512062157",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12275393",
@@ -2257,7 +2333,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24512062178",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12275393",
@@ -2281,7 +2358,8 @@
         "FifoPnlRealized": "3.473057",
         "Buy/Sell": "BUY",
         "TransactionID": "24512118205",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -2323,7 +2401,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24497974430",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12275393",
@@ -2347,7 +2426,8 @@
         "FifoPnlRealized": "0.135852",
         "Buy/Sell": "BUY",
         "TransactionID": "24515545657",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   },
@@ -2389,7 +2469,8 @@
         "FifoPnlRealized": "0",
         "Buy/Sell": "SELL",
         "TransactionID": "24518606996",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
       },
       {
         "ClientAccountID": "U12275393",
@@ -2413,7 +2494,212 @@
         "FifoPnlRealized": "7.083964",
         "Buy/Sell": "BUY",
         "TransactionID": "24519872053",
-        "TraderID": ""
+        "TraderID": "",
+        "TimeZone": "EDT"
+      }
+    ]
+  },
+  {
+    "Symbol": "STKH",
+    "Asset class": "STK",
+    "Long/Short": "SHORT",
+    "Win/Loss": "WIN",
+    "Number of Orders": 2,
+    "Quantity": 0.0,
+    "Trade Shares/Contracts Quantity": 97.0,
+    "Trade Result": 7.0486176799999924,
+    "Trade Amount": 103.79,
+    "Trade Result Percentage": 0.06791230060699481,
+    "Trade Fee": -1.9626823199999999,
+    "Enter Date": "2023-07-24 10:06:16",
+    "Exit Date": "2023-07-24 10:16:01",
+    "Holding time": "9 minutes",
+    "Orders": [
+      {
+        "ClientAccountID": "U12321737",
+        "AccountAlias": "Segunda-feira",
+        "CurrencyPrimary": "USD",
+        "AssetClass": "STK",
+        "Symbol": "STKH",
+        "ListingExchange": "NASDAQ",
+        "TradeID": "5620106230",
+        "DateTime": "2023-07-24 10:06:16",
+        "TransactionType": "ExchTrade",
+        "Exchange": "ISLAND",
+        "Quantity": -97.0,
+        "TradePrice": 1.07,
+        "TradeMoney": -103.79,
+        "Proceeds": "103.79",
+        "IBCommission": -1.01489532,
+        "NetCash": 102.77510468,
+        "Open/CloseIndicator": "O",
+        "CostBasis": -102.77510468,
+        "FifoPnlRealized": "0",
+        "Buy/Sell": "SELL",
+        "TransactionID": "24527762641",
+        "TraderID": "",
+        "TimeZone": "EDT"
+      },
+      {
+        "ClientAccountID": "U12321737",
+        "AccountAlias": "Segunda-feira",
+        "CurrencyPrimary": "USD",
+        "AssetClass": "STK",
+        "Symbol": "STKH",
+        "ListingExchange": "NASDAQ",
+        "TradeID": "5620221003",
+        "DateTime": "2023-07-24 10:16:01",
+        "TransactionType": "ExchTrade",
+        "Exchange": "ISLAND",
+        "Quantity": 97.0,
+        "TradePrice": 0.9771,
+        "TradeMoney": 94.7787,
+        "Proceeds": "-94.7787",
+        "IBCommission": -0.947787,
+        "NetCash": -95.726487,
+        "Open/CloseIndicator": "C",
+        "CostBasis": 102.775105,
+        "FifoPnlRealized": "7.048618",
+        "Buy/Sell": "BUY",
+        "TransactionID": "24528069543",
+        "TraderID": "",
+        "TimeZone": "EDT"
+      }
+    ]
+  },
+  {
+    "Symbol": "ARMP",
+    "Asset class": "STK",
+    "Long/Short": "SHORT",
+    "Win/Loss": "WIN",
+    "Number of Orders": 2,
+    "Quantity": 0.0,
+    "Trade Shares/Contracts Quantity": 70.0,
+    "Trade Result": 13.563896600000007,
+    "Trade Amount": 119.175,
+    "Trade Result Percentage": 0.11381494944409488,
+    "Trade Fee": -2.0111034,
+    "Enter Date": "2023-07-24 10:39:13",
+    "Exit Date": "2023-07-24 10:42:15",
+    "Holding time": "3 minutes",
+    "Orders": [
+      {
+        "ClientAccountID": "U12321737",
+        "AccountAlias": "Segunda-feira",
+        "CurrencyPrimary": "USD",
+        "AssetClass": "STK",
+        "Symbol": "ARMP",
+        "ListingExchange": "AMEX",
+        "TradeID": "5620422505",
+        "DateTime": "2023-07-24 10:39:13",
+        "TransactionType": "ExchTrade",
+        "Exchange": "DARK",
+        "Quantity": -70.0,
+        "TradePrice": 1.7025,
+        "TradeMoney": -119.175,
+        "Proceeds": "119.175",
+        "IBCommission": -1.0111034,
+        "NetCash": 118.1638966,
+        "Open/CloseIndicator": "O",
+        "CostBasis": -118.1638966,
+        "FifoPnlRealized": "0",
+        "Buy/Sell": "SELL",
+        "TransactionID": "24528664049",
+        "TraderID": "",
+        "TimeZone": "EDT"
+      },
+      {
+        "ClientAccountID": "U12321737",
+        "AccountAlias": "Segunda-feira",
+        "CurrencyPrimary": "USD",
+        "AssetClass": "STK",
+        "Symbol": "ARMP",
+        "ListingExchange": "AMEX",
+        "TradeID": "5620445215",
+        "DateTime": "2023-07-24 10:42:15",
+        "TransactionType": "ExchTrade",
+        "Exchange": "DRCTEDGE",
+        "Quantity": 70.0,
+        "TradePrice": 1.48,
+        "TradeMoney": 103.6,
+        "Proceeds": "-103.6",
+        "IBCommission": -1.0,
+        "NetCash": -104.6,
+        "Open/CloseIndicator": "C",
+        "CostBasis": 118.163897,
+        "FifoPnlRealized": "13.563897",
+        "Buy/Sell": "BUY",
+        "TransactionID": "24528719259",
+        "TraderID": "",
+        "TimeZone": "EDT"
+      }
+    ]
+  },
+  {
+    "Symbol": "DFLI",
+    "Asset class": "STK",
+    "Long/Short": "SHORT",
+    "Win/Loss": "WIN",
+    "Number of Orders": 2,
+    "Quantity": 0.0,
+    "Trade Shares/Contracts Quantity": 32.0,
+    "Trade Result": 10.581745920000003,
+    "Trade Amount": 101.76,
+    "Trade Result Percentage": 0.10398728301886795,
+    "Trade Fee": -1.89825408,
+    "Enter Date": "2023-07-24 10:38:19",
+    "Exit Date": "2023-07-24 10:59:24",
+    "Holding time": "21 minutes",
+    "Orders": [
+      {
+        "ClientAccountID": "U12321737",
+        "AccountAlias": "Segunda-feira",
+        "CurrencyPrimary": "USD",
+        "AssetClass": "STK",
+        "Symbol": "DFLI",
+        "ListingExchange": "NASDAQ",
+        "TradeID": "5620417889",
+        "DateTime": "2023-07-24 10:38:19",
+        "TransactionType": "ExchTrade",
+        "Exchange": "ISLAND",
+        "Quantity": -32.0,
+        "TradePrice": 3.18,
+        "TradeMoney": -101.76,
+        "Proceeds": "101.76",
+        "IBCommission": -1.00545408,
+        "NetCash": 100.75454592,
+        "Open/CloseIndicator": "O",
+        "CostBasis": -100.75454592,
+        "FifoPnlRealized": "0",
+        "Buy/Sell": "SELL",
+        "TransactionID": "24528653786",
+        "TraderID": "",
+        "TimeZone": "EDT"
+      },
+      {
+        "ClientAccountID": "U12321737",
+        "AccountAlias": "Segunda-feira",
+        "CurrencyPrimary": "USD",
+        "AssetClass": "STK",
+        "Symbol": "DFLI",
+        "ListingExchange": "NASDAQ",
+        "TradeID": "5620562342",
+        "DateTime": "2023-07-24 10:59:24",
+        "TransactionType": "ExchTrade",
+        "Exchange": "ISLAND",
+        "Quantity": 32.0,
+        "TradePrice": 2.79,
+        "TradeMoney": 89.28,
+        "Proceeds": "-89.28",
+        "IBCommission": -0.8928,
+        "NetCash": -90.1728,
+        "Open/CloseIndicator": "C",
+        "CostBasis": 100.754546,
+        "FifoPnlRealized": "10.581746",
+        "Buy/Sell": "BUY",
+        "TransactionID": "24529049170",
+        "TraderID": "",
+        "TimeZone": "EDT"
       }
     ]
   }
