@@ -1,3 +1,4 @@
+import csv
 import requests
 from bs4 import BeautifulSoup
 
@@ -9,6 +10,24 @@ def fetch_page_content(url):
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
         return None
+
+def remove_duplicate_headers(input_file, output_file):
+    with open(input_file, 'r') as infile:
+        reader = csv.reader(infile)
+        with open(output_file, 'w', newline='') as outfile:
+            writer = csv.writer(outfile)
+
+            # Flag to check if the header is already written to the output file
+            header_written = False
+
+            for row in reader:
+                # Check if the row contains the header and it's not written already
+                if "ClientAccountID" in row and not header_written:
+                    writer.writerow(row)
+                    header_written = True
+                # Check if the row doesn't contain the header and write the data
+                elif "ClientAccountID" not in row:
+                    writer.writerow(row)
 
 def fetch_IBKR_data_and_write_to_csv(IBKR_user_token, IBKR_user_query):
     url = f"https://www.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest?t={IBKR_user_token}&q={IBKR_user_query}&v=2"
@@ -24,9 +43,13 @@ def fetch_IBKR_data_and_write_to_csv(IBKR_user_token, IBKR_user_query):
             IBKR_user_orders = fetch_page_content(user_query_url)
             if IBKR_user_orders:
                 # Write the data to the CSV file
-                file_path = "orders.csv"
-                with open(file_path, 'wb') as file:
+                raw_orders_file = "raw_orders.csv"
+                with open(raw_orders_file, 'wb') as file:
                     file.write(IBKR_user_orders)
+                
+                # Clean the CSV file to remove duplicate headers
+                orders_file = "orders.csv"
+                remove_duplicate_headers(raw_orders_file, orders_file)
             else:
                 print("Error fetching user orders.")
         else:
