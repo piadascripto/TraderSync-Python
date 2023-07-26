@@ -2,6 +2,9 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
+IBKR_user_token = "135962967293328323184330"
+IBKR_user_query = "830297"
+
 def fetch_page_content(url):
     try:
         response = requests.get(url)
@@ -29,7 +32,7 @@ def remove_duplicate_headers(input_file, output_file):
                 elif "ClientAccountID" not in row:
                     writer.writerow(row)
 
-def fetch_IBKR_data_and_write_to_csv(IBKR_user_token, IBKR_user_query):
+def fetch_IBKR_orders(IBKR_user_token, IBKR_user_query):
     url = f"https://www.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest?t={IBKR_user_token}&q={IBKR_user_query}&v=2"
     
     page_content = fetch_page_content(url)
@@ -58,3 +61,6 @@ def fetch_IBKR_data_and_write_to_csv(IBKR_user_token, IBKR_user_query):
         print("Error fetching IBKR data.")
     
     return None
+
+
+fetch_IBKR_orders(IBKR_user_token, IBKR_user_query)

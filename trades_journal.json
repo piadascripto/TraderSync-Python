@@ -638,5 +638,101 @@
         "Holding time": "21 minutes"
       }
     ]
+  },
+  "2023-07-25": {
+    "Total Result": 71.62240032,
+    "Total Result Percentaage": 0.12287042651524246,
+    "Total Amount": 582.9100000000001,
+    "Profit factor": 0,
+    "Total Gains": 94.98734191999999,
+    "Total Losses": -23.3649416,
+    "Total Fee": -9.37759968,
+    "Number of Trades": 5,
+    "Average Trade Amount": 116.58200000000002,
+    "Win Rate": 0.6,
+    "Number of Wins": 3,
+    "Number of Loss": 2,
+    "Trades": [
+      {
+        "Symbol": "SDPI",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 100.0,
+        "Trade Result": 73.98377199999999,
+        "Trade Amount": 216.0,
+        "Trade Result Percentage": 0.3425174629629629,
+        "Trade Fee": -2.016228,
+        "Enter Date": "2023-07-24 11:17:59",
+        "Exit Date": "2023-07-25 08:05:39",
+        "Holding time": "1 day"
+      },
+      {
+        "Symbol": "INPX",
+        "Asset class": "STK",
+        "Long/Short": "LONG",
+        "Win/Loss": "WIN",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 200.0,
+        "Trade Result": 5.767274560000004,
+        "Trade Amount": 58.64,
+        "Trade Result Percentage": 0.09835052114597552,
+        "Trade Fee": -1.2727254399999999,
+        "Enter Date": "2023-07-25 09:53:59",
+        "Exit Date": "2023-07-25 10:02:38",
+        "Holding time": "8 minutes"
+      },
+      {
+        "Symbol": "STKH",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "WIN",
+        "Number of Orders": 4,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 160.0,
+        "Trade Result": 15.23629536,
+        "Trade Amount": 213.08,
+        "Trade Result Percentage": 0.07150504674300731,
+        "Trade Fee": -3.9637046399999996,
+        "Enter Date": "2023-07-25 10:21:57",
+        "Exit Date": "2023-07-25 14:10:14",
+        "Holding time": "3 hours"
+      },
+      {
+        "Symbol": "HGEN",
+        "Asset class": "STK",
+        "Long/Short": "LONG",
+        "Win/Loss": "LOSS",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 1000.0,
+        "Trade Result": -8.233326399999996,
+        "Trade Amount": 48.0,
+        "Trade Result Percentage": -0.17152763333333323,
+        "Trade Fee": -1.0333264,
+        "Enter Date": "2023-07-25 11:58:37",
+        "Exit Date": "2023-07-25 14:28:03",
+        "Holding time": "2 hours"
+      },
+      {
+        "Symbol": "VRAY",
+        "Asset class": "STK",
+        "Long/Short": "LONG",
+        "Win/Loss": "LOSS",
+        "Number of Orders": 2,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 1300.0,
+        "Trade Result": -15.131615200000006,
+        "Trade Amount": 47.19,
+        "Trade Result Percentage": -0.32065300275482106,
+        "Trade Fee": -1.0916152000000001,
+        "Enter Date": "2023-07-25 08:53:23",
+        "Exit Date": "2023-07-25 15:34:19",
+        "Holding time": "6 hours"
+      }
+    ]
   }
 }
