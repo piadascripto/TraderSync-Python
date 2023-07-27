@@ -229,7 +229,7 @@ def create_chart_trade_result_by_day(trades_journal):
     trades_df.sort_values(by="index", ascending=True, inplace=True)
 
     # Create a new column "Color" to determine the color of the bars based on the value of "Total Result"
-    trades_df["Color"] = trades_df["Total Result"].apply(lambda x: "green" if x >= 0 else "red")
+    trades_df["Color"] = trades_df["Total Result"].apply(lambda x: "#00FF00" if x >= 0 else "#FF0000")
 
     # Create the chart using pandas plot
     trades_df.plot(x="index", y="Total Result", kind="bar", title="Total Result by Trade Day", color=trades_df["Color"])
