@@ -12,6 +12,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 1,
     "Number of Loss": 0,
+    "Trade day": "2023-07-06",
     "Trades": [
       {
         "Symbol": "TTOO",
@@ -44,6 +45,7 @@
     "Win Rate": 0.75,
     "Number of Wins": 3,
     "Number of Loss": 1,
+    "Trade day": "2023-07-07",
     "Trades": [
       {
         "Symbol": "TTCF",
@@ -124,6 +126,7 @@
     "Win Rate": 0.5,
     "Number of Wins": 2,
     "Number of Loss": 2,
+    "Trade day": "2023-07-10",
     "Trades": [
       {
         "Symbol": "RVYL",
@@ -204,6 +207,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 1,
     "Number of Loss": 0,
+    "Trade day": "2023-07-11",
     "Trades": [
       {
         "Symbol": "UGRO",
@@ -236,6 +240,7 @@
     "Win Rate": 0.0,
     "Number of Wins": 0,
     "Number of Loss": 1,
+    "Trade day": "2023-07-13",
     "Trades": [
       {
         "Symbol": "BTTX",
@@ -268,6 +273,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 1,
     "Number of Loss": 0,
+    "Trade day": "2023-07-14",
     "Trades": [
       {
         "Symbol": "IGC",
@@ -300,6 +306,7 @@
     "Win Rate": 0.0,
     "Number of Wins": 0,
     "Number of Loss": 1,
+    "Trade day": "2023-07-17",
     "Trades": [
       {
         "Symbol": "AKBA",
@@ -332,6 +339,7 @@
     "Win Rate": 0.6,
     "Number of Wins": 3,
     "Number of Loss": 2,
+    "Trade day": "2023-07-18",
     "Trades": [
       {
         "Symbol": "KIQ",
@@ -428,6 +436,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 2,
     "Number of Loss": 0,
+    "Trade day": "2023-07-19",
     "Trades": [
       {
         "Symbol": "GMVD",
@@ -476,6 +485,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 2,
     "Number of Loss": 0,
+    "Trade day": "2023-07-20",
     "Trades": [
       {
         "Symbol": "LYT",
@@ -524,6 +534,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 3,
     "Number of Loss": 0,
+    "Trade day": "2023-07-21",
     "Trades": [
       {
         "Symbol": "CEI",
@@ -588,6 +599,7 @@
     "Win Rate": 1.0,
     "Number of Wins": 3,
     "Number of Loss": 0,
+    "Trade day": "2023-07-24",
     "Trades": [
       {
         "Symbol": "STKH",
@@ -652,6 +664,7 @@
     "Win Rate": 0.6,
     "Number of Wins": 3,
     "Number of Loss": 2,
+    "Trade day": "2023-07-25",
     "Trades": [
       {
         "Symbol": "SDPI",

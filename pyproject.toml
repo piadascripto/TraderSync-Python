@@ -12,6 +12,8 @@ Flask = "^2.2.0"
 urllib3 = "^1.26.12"
 pandas = "^2.0.3"
 bs4 = "^0.0.1"
+matplotlib = "^3.7.2"
+seaborn = "^0.12.2"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"

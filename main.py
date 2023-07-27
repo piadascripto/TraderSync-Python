@@ -2,6 +2,9 @@ import csv
 import json
 import datetime
 from utils import simplify_time_difference
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # Read CSV data from file
@@ -91,6 +94,8 @@ def create_trades(orders):
 
 	return trades
 
+trades = create_trades(orders)
+
 def create_trades_journal(trades):
 	
 	trades_journal = {}
@@ -145,6 +150,7 @@ def create_trades_journal(trades):
 	            "Win Rate": 1.0 if trade["Win/Loss"] == "WIN" else 0.0,
 	            "Number of Wins": 1 if trade["Win/Loss"] == "WIN" else 0,
 	            "Number of Loss": 1 if trade["Win/Loss"] == "LOSS" else 0,
+				"Trade day": trade_day,
 	            "Trades": [trade_data]
 	        }
 	
@@ -157,7 +163,9 @@ def create_trades_journal(trades):
 	    json.dump(trades_journal, json_file, indent=2, default=str)
 
 	return trades_journal
-	
+
+trades_journal = create_trades_journal(trades)
+
 def create_trades_statitics(trades_journal):
 
 	#key aggregated statics
@@ -205,6 +213,111 @@ def create_trades_statitics(trades_journal):
 
 	return trades_statistics
 
+create_trades_statitics(trades_journal)
+
+def create_chart_trade_result_by_day(trades_journal):
+    # Convert trades_journal to a DataFrame
+    trades_df = pd.DataFrame(trades_journal).T
+
+    # Reset the index to convert the trade_day (index) to a column
+    trades_df.reset_index(level=0, inplace=True)
+
+    # Convert the "Total Result" column to numeric (float) type
+    trades_df["Total Result"] = pd.to_numeric(trades_df["Total Result"])
+
+    # Sort the DataFrame by trade_day (index) in ascending order
+    trades_df.sort_values(by="index", ascending=True, inplace=True)
+
+    # Create a new column "Color" to determine the color of the bars based on the value of "Total Result"
+    trades_df["Color"] = trades_df["Total Result"].apply(lambda x: "green" if x >= 0 else "red")
+
+    # Create the chart using pandas plot
+    trades_df.plot(x="index", y="Total Result", kind="bar", title="Total Result by Trade Day", color=trades_df["Color"])
+
+    # Show the chart
+    plt.show()
+
+def create_chart_cumulative_trade_result_by_day(trades_journal):
+    # Convert trades_journal to a DataFrame
+    trades_df = pd.DataFrame(trades_journal).T
+
+    # Reset the index to convert the trade_day (index) to a column
+    trades_df.reset_index(level=0, inplace=True)
+
+    # Convert the "Total Result" column to numeric (float) type
+    trades_df["Total Result"] = pd.to_numeric(trades_df["Total Result"])
+
+    # Sort the DataFrame by trade_day (index) in ascending order
+    trades_df.sort_values(by="index", ascending=True, inplace=True)
+
+    # Calculate the cumulative result
+    trades_df["Cumulative Result"] = trades_df["Total Result"].cumsum()
+
+    # Determine the color based on the cumulative result
+    trades_df["Color"] = trades_df["Cumulative Result"].apply(lambda x: "green" if x >= 0 else "red")
+
+    # Create the chart showing the cumulative total result
+    trades_df.plot(x="index", y="Cumulative Result", kind="bar", title="Cumulative Total Result", color=trades_df["Color"])
+
+    # Show the chart
+    plt.show()
+
+def create_chart_calendar_heatmap_trade_result_by_day(trades_journal):
+    # Convert to DataFrame
+    df = pd.DataFrame(trades_journal).T
+    df['Trade day'] = pd.to_datetime(df['Trade day'])
+    df['Week'] = df['Trade day'].dt.isocalendar().week
+    df['Day'] = df['Trade day'].dt.day_name()
+
+    # Pivot the table for both Total Result and Trade Day
+    heatmap_trade_result_data = df.pivot(index='Week', columns='Day', values='Total Result').fillna(0)
+    trade_days_data = df.pivot(index='Week', columns='Day', values='Trade day').fillna('')
+    number_of_trades_data = df.pivot(index='Week', columns='Day', values='Number of Trades').fillna(0)
+
+    # Order the days if they exist
+    days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    available_days = [day for day in days_of_week if day in heatmap_trade_result_data.columns]
+    heatmap_trade_result_data = heatmap_trade_result_data[available_days]
+    trade_days_data = trade_days_data[available_days]
+    number_of_trades_data = number_of_trades_data[available_days]
+	
+    # Plot
+    fig, ax = plt.subplots(figsize=(7, 7))
+    
+    # Use a diverging colormap
+    cmap = plt.cm.RdYlGn
+    
+    sns.heatmap(heatmap_trade_result_data, cmap=cmap, center=0, annot=True, fmt=".2f", cbar=False, mask=heatmap_trade_result_data.isnull(), square=True, ax=ax, linewidths=.5)
+    
+    # Adjust annotations
+    for text, trade_day, num_trades in zip(ax.texts, trade_days_data.values.ravel(), number_of_trades_data.values.ravel()):
+
+        trade_result = float(text.get_text())
+        
+        if trade_day and not pd.isna(trade_day):
+            trade_day_str = pd.to_datetime(trade_day).strftime('%Y-%m-%d')
+            
+            if trade_result == 0:
+                text.set_text('')
+            else:
+                text.set_text(f'USD {text.get_text()}\n{trade_day_str}\nTrades: {int(num_trades)}')
+        else:
+            text.set_text('')
+    
+    plt.title('Trade Results Heatmap')
+    plt.tight_layout()
+    plt.show()
 
 
-create_trades_statitics(create_trades_journal(create_trades(orders)))
+
+
+# Assuming you have the 'trades' list of trades available
+trades_journal = create_trades_journal(trades)
+
+# Now call the function to create the chart using the trades_journal data
+#create_chart_trade_result_by_day(trades_journal)
+#create_chart_cumulative_trade_result_by_day(trades_journal)
+create_chart_calendar_heatmap_trade_result_by_day(trades_journal)
+
+
+
