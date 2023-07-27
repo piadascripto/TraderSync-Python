@@ -254,7 +254,7 @@ def create_chart_cumulative_trade_result_by_day(trades_journal):
     trades_df["Cumulative Result"] = trades_df["Total Result"].cumsum()
 
     # Determine the color based on the cumulative result
-    trades_df["Color"] = trades_df["Cumulative Result"].apply(lambda x: "green" if x >= 0 else "red")
+    trades_df["Color"] = trades_df["Cumulative Result"].apply(lambda x: "#00FF00" if x >= 0 else "#FF0000")
 
     # Create the chart showing the cumulative total result
     trades_df.plot(x="index", y="Cumulative Result", kind="bar", title="Cumulative Total Result", color=trades_df["Color"])
@@ -283,11 +283,17 @@ def create_chart_calendar_heatmap_trade_result_by_day(trades_journal):
 	
     # Plot
     fig, ax = plt.subplots(figsize=(7, 7))
+    mask = (number_of_trades_data.isnull())
+
+	# Define the custom colormap with a spectral transition from red to green, passing through white
+    colors = ["#FF0000", "#FFFFFF", "#00FF00"]
+    cmap = sns.blend_palette(colors, as_cmap=True, n_colors=256)
+
+    # Set the background color for the masked cells to white
+    ax.set_facecolor('white')
+
     
-    # Use a diverging colormap
-    cmap = plt.cm.RdYlGn
-    
-    sns.heatmap(heatmap_trade_result_data, cmap=cmap, center=0, annot=True, fmt=".2f", cbar=False, mask=heatmap_trade_result_data.isnull(), square=True, ax=ax, linewidths=.5)
+    sns.heatmap(heatmap_trade_result_data, cmap=cmap, center=0, annot=True, fmt=".2f", cbar=False, mask=mask, square=True, ax=ax, linewidths=.5)
     
     # Adjust annotations
     for text, trade_day, num_trades in zip(ax.texts, trade_days_data.values.ravel(), number_of_trades_data.values.ravel()):
@@ -302,12 +308,56 @@ def create_chart_calendar_heatmap_trade_result_by_day(trades_journal):
             else:
                 text.set_text(f'USD {text.get_text()}\n{trade_day_str}\nTrades: {int(num_trades)}')
         else:
-            text.set_text('')
+            text.set_text('No trades')
     
     plt.title('Trade Results Heatmap')
     plt.tight_layout()
     plt.show()
 
+def create_chart_calendar_heatmap_trade_result_summary(trades_journal):
+    # Convert to DataFrame
+    df = pd.DataFrame(trades_journal).T
+    df['Trade day'] = pd.to_datetime(df['Trade day'])
+    df['Week'] = df['Trade day'].dt.isocalendar().week
+    df['Day'] = df['Trade day'].dt.day_name()
+    df['Month'] = df['Trade day'].dt.strftime('%B')  # Extract month names
+
+    # Pivot the table for both Total Result and Trade Day
+    heatmap_trade_result_data = df.pivot(index='Week', columns='Day', values='Total Result').fillna(0)
+    trade_days_data = df.pivot(index='Week', columns='Day', values='Trade day').fillna('')
+
+    # Order the days if they exist
+    days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    available_days = [day for day in days_of_week if day in heatmap_trade_result_data.columns]
+    heatmap_trade_result_data = heatmap_trade_result_data[available_days]
+    trade_days_data = trade_days_data[available_days]
+
+    # Plot
+    fig, ax = plt.subplots(figsize=(2, 2))
+    
+    # Create a mask for Trade Results equal to 0
+    mask = heatmap_trade_result_data == 0
+
+    # Define the custom colormap with a spectral transition from red to green, passing through white
+    colors = ["#FF0000", "#FFFFFF", "#00FF00"]
+    cmap = sns.blend_palette(colors, as_cmap=True, n_colors=256)
+
+    # Set the background color for the masked cells to white
+    ax.set_facecolor('white')
+
+    # Plot the heatmap with the mask applied
+    sns.heatmap(heatmap_trade_result_data, cmap=cmap, center=0, annot=False, fmt=".2f", cbar=False, square=True, ax=ax, linewidths=.5, mask=mask)
+
+    # Set Y-axis labels to the month names
+    unique_months = df['Month'].unique()
+    ax.set_yticks(range(len(unique_months)))
+    ax.set_yticklabels(unique_months, rotation=0)
+	# Remove the Y-axis label "Week"
+    ax.set_ylabel('')
+
+    plt.title('Trade Results Heatmap')
+    plt.tight_layout()
+    plt.show()
 
 
 
@@ -316,8 +366,9 @@ trades_journal = create_trades_journal(trades)
 
 # Now call the function to create the chart using the trades_journal data
 #create_chart_trade_result_by_day(trades_journal)
-#create_chart_cumulative_trade_result_by_day(trades_journal)
-create_chart_calendar_heatmap_trade_result_by_day(trades_journal)
+create_chart_cumulative_trade_result_by_day(trades_journal)
+#create_chart_calendar_heatmap_trade_result_by_day(trades_journal)
+#create_chart_calendar_heatmap_trade_result_summary(trades_journal)
 
 
 
