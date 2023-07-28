@@ -1,8 +1,11 @@
 import csv
 import requests
 from bs4 import BeautifulSoup
+import os
 
-IBKR_user_token = "135962967293328323184330"
+TOKEN_IBKR = os.environ['TOKEN_IBKR']
+
+IBKR_user_token = TOKEN_IBKR
 IBKR_user_query = "830297"
 
 def fetch_page_content(url):
