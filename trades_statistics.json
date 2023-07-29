@@ -1,12 +1,19 @@
 {
-  "Net Result": 132.73101942999995,
+  "Report date": "From 2023-07-06 to 2023-07-27",
+  "Net Result": 116.71415942999995,
   "Net Gains $": 291.575190929,
-  "Net Losses $": 158.84417149900003,
-  "Return %": 0.030528428579780924,
-  "Average Amount": 131.75103636363636,
-  "Profit Factor": 1.8356052235182927,
-  "Win Rate %": 0.7272727272727273,
+  "Net Losses $": -174.86103149900003,
+  "Return %": 0.025138829289114914,
+  "Average Amount": 136.55247647058823,
+  "Average Gain %": 0.08896921244284481,
+  "Average Loss %": -0.12805409027983686,
+  "Profit Factor": 1.6674680941171698,
+  "# Trades": 34,
+  "Win Rate %": 0.7058823529411765,
   "# Wins": 24,
-  "# Loss": 9,
-  "Fees": -63.74788057000001
+  "# Loss": 10,
+  "Fees": -67.62274057,
+  "Average Trades per day": 2.4285714285714284,
+  "# Days with trades": 14,
+  "% Days with trades": 0.875
 }

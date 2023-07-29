@@ -747,5 +747,38 @@
         "Holding time": "6 hours"
       }
     ]
+  },
+  "2023-07-27": {
+    "Total Result": -16.016859999999994,
+    "Total Result Percentaage": -0.05429444067796608,
+    "Total Amount": 295.0,
+    "Profit factor": 0,
+    "Total Gains": 0.0,
+    "Total Losses": -16.016859999999994,
+    "Total Fee": -3.87486,
+    "Number of Trades": 1,
+    "Average Trade Amount": 295.0,
+    "Win Rate": 0.0,
+    "Number of Wins": 0,
+    "Number of Loss": 1,
+    "Trade day": "2023-07-27",
+    "Trades": [
+      {
+        "Symbol": "GLTO",
+        "Asset class": "STK",
+        "Long/Short": "SHORT",
+        "Win/Loss": "LOSS",
+        "Number of Orders": 5,
+        "Quantity": 0.0,
+        "Trade Shares/Contracts Quantity": 100.0,
+        "Trade Result": -16.016859999999994,
+        "Trade Amount": 295.0,
+        "Trade Result Percentage": -0.05429444067796608,
+        "Trade Fee": -3.87486,
+        "Enter Date": "2023-07-25 10:25:59",
+        "Exit Date": "2023-07-27 14:20:01",
+        "Holding time": "2 days"
+      }
+    ]
   }
 }
